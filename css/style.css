@@ -1,0 +1,77 @@
+/* Script CSS permettant l'ajout de style aux élements de la page (couleur, police, position...) */
+
+
+/*Style général de la page*/
+.body, html {
+    background-color: grey /*Définition d'une couleur de fond*/
+}
+
+
+/*Style du titre principale*/
+.titre_principale {
+    color: rgb(255, 255, 255); /*Définition couleur de texte*/
+    font-family: Calibri; /*Définition police de texte*/
+    font-weight: bold; /*Mise en gras du texte*/
+    font-size: 50px; /*Définition taille du texte*/
+    text-align: center /*Définition position du texte*/
+}
+
+
+/*Style des titres secondaires*/
+.titre_secondaire {
+    color: rgb(255, 255, 255);
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline /*Soulignage texte*/
+}
+
+
+/*Style des textes*/
+.texte {
+    color: white;
+    font-family: Arial;
+    font-size: 25px
+}
+
+
+/*Style des listes*/
+.liste {
+    color: white;
+    font-family: Arial;
+    font-size: 20px
+}
+
+
+/*Style des images*/
+.image {
+    width: 150vh; /*largeur de l'image*/
+    height: 100vh; /*hauteur de l'image*/
+    object-fit: contain /*Cette fonction permet de grader les proportions d'origine de l'image*/
+}
+
+
+/* Création et animation des pop-up d'image */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alignement vertical */
+}
+
+
+/* Image agrandie */
+.popup-content {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+    margin-top: 20px; /* Un peu d'espace pour éviter que l'image touche le titre */
+}

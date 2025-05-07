@@ -1,0 +1,143 @@
+<!-- Script HTML permettant l'import d'un squelette à la page en savoirs plus de notre application -->
+
+
+<!-- Définition du type de document -->
+<!DOCTYPE html>
+<!-- Ouverture de la balise HTML -->
+<html>
+
+
+<!-- Ouverture de la balise HEAD qui permet le paramétrage du document -->
+<head>
+    <!-- Définition du titre de la page (onglet) -->
+    <title>Page web entrainement</title>
+    <!-- Lien avec le fichier de style CSS de la page -->
+    <link rel="stylesheet" href="css/style.css">
+<!-- Fermeture de la balise -->
+</head>
+
+
+<!-- Ouverture de la balise BODY qui contient tout le contenue visible de la page -->
+<body>
+
+    <!-- Rédaction d'un titre de niveau 1 avec une classe -->
+    <h1 class="titre_principale">Page web entrainement</h1>
+
+
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire"> - Qu’est-ce qu’un langage de programmation ? </h2>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        Un langage de programmation ou langage informatique est un mode de communication compréhensible par les machines. Qui nous permet de leur faire exécuter 
+        des programmes qui contiennent des listes d’instructions pour qu’elle réalise des tâches bien précise (calcules, logiciels, sites web, automatisation…).
+    </p>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        Le seul langage vraiment compréhensible par les ordinateurs : Ce langage est appelé langage machine ou binaire est n’est composé que de deux caractères le 1 
+        et le 0. De manière très simplifiée un ordinateur est un assemblage de circuit qui ne savent faire que deux choses. Laisser passer le courant (1) ou ne pas le 
+        laisser passer (0). Cette multitude de circuits s’ouvrant et se ferment à la suite permettent de rédiger des messages complexes. 
+    </p>
+    <!-- Création d'une liste -->
+    <ul>
+        <li class="liste">A = 01000001</li>
+        <li class="liste">1 = 00110001</li>
+        <li class="liste">Bonjour = 01000010 01101111 01101110 01101010 01101111 01110101 01110010</li>
+    </ul>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://www.prepostseo.com/tool/fr/binary-translator">Traducteur binaire</a>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        Le langage binaire étant extrêmement dure à maîtriser que quasiment personne ne programme comme ça directement. On utilise des langages dit de haut niveau 
+        (le binaire est un langage de bas niveau). Ces langages de haut niveau traduisent le binaire est facilite grandement le travail des développeurs. 
+    </p>
+
+
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire">Présentation des grands langages de programmation : </h2>
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire"> - HTML : </h2>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        HTML (Hyper Text Markup Language) : Il va permettre de créer et structurer des pages web. Il va former le squelette des sites et applications présentes sur 
+        internet. Ajouter des textes, des images, des liens, des titres, des paragraphes… Actuellement ce langage en est à sa cinquième version d’où son nom complet HTML5.
+    </p>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://developer.mozilla.org/fr/docs/Web/HTML">Site sur l'HTML</a>
+    <!-- Import d'une image avec le chemin de l'image noté dans le src, une class et une fonction javascript -->
+    <img src="img/html5_cheat_sheet.jpg" class="image" onclick="openPopup(this)"> <!-- La fonction openPopup s'activera au clique (onclick) de l'utilisateur -->
+
+
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire"> - JS : </h2>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        JS (JavaScript) : Il va permettre d’animer les pages web en leur appliquant des fonctions. Comme par exemple en animant des boutons, ou des pop-ups. Sans ce 
+        langage les utilisateurs ne peuvent pas interagir avec la page.
+    </p>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript">Site sur le JS</a>
+    <!-- Import d'une image -->
+    <img src="img/javascript_cheat_sheet.jpg" class="image" onclick="openPopup(this)">
+
+
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire"> - CSS : </h2>
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        CSS (Cascading Style Sheet) : Ces un langage qui permet d’appliquer aux pages web des styles tels que de la couleur, des tailles, des polices de textes, la 
+        disposition des éléments, ect… Son rôle est donc d’embellir les contenus web.
+    </p>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://developer.mozilla.org/fr/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content">Site sur le CSS</a>
+    <!-- Import d'une image -->
+    <img src="img/css3_cheat_sheet.jpg" class="image" onclick="openPopup(this)">
+
+    
+    <!-- Paramétrage de toute les images de la page comme pop-up pour pouvoir les visualiser en grand -->
+    <div id="imagePopup" class="popup" onclick="closePopup()"> <!-- La fonction closePopup s'activera au clique (onclick) de l'utilisateur -->
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popupImage">
+    </div>
+
+
+    <!-- Rédaction de texte simple -->
+    <p class="texte">
+        Ces trois langages ne représentent qu’une petite partie des quelques 700 langages existants. On peut par exemple citer l’SQL pour la manipulation de données 
+        dans de large base. Le R pour les traitements statistiques. Le Matlab pour les mathématiques. Le C ou le C++ qui est très utilisé pour la création de logiciels 
+        ou de jeux-vidéo. Le PHP pour la programmation web côté serveur. Ou encore le python qui est un langage très polyvalent utilisant en programmation web, logiciels, 
+        statistiques ou encore en cyber sécurité…
+    </p>
+
+
+    <!-- Rédaction d'un titre de niveau 2 -->
+    <h2 class="titre_secondaire"> - Formation : </h2>
+    <!-- Balise br pour aller à la ligne entre élement de texte -->
+    <br></br>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://youtu.be/IwpAAXNgxMs?si=7vUmDXNhjeYRFJaG">Video pour m’être un site en ligne avec github</a>
+    <!-- Balise br pour aller à la ligne entre élement de texte -->
+    <br></br>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3">Formation html et css</a>
+    <!-- Balise br pour aller à la ligne entre élement de texte -->
+    <br></br>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript">Formation javascript</a>
+    <!-- Balise br pour aller à la ligne entre élement de texte -->
+    <br></br>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://openclassrooms.com/fr/courses/7168871-apprenez-les-bases-du-langage-python">Formation python</a>
+    <!-- Balise br pour aller à la ligne entre élement de texte -->
+    <br></br>
+    <!-- Ajout d'un lien hyper texte -->
+    <a href="https://openclassrooms.com/fr/courses/7818671-requetez-une-base-de-donnees-avec-sql">Formation sql</a>
+
+
+    <!-- Lien avec le fichier de fonctionalité JS de la page -->
+    <script src="js/script.js"></script>
+
+
+<!-- Fermeture de la balise BODY -->
+</body>
+<!-- Fermeture de la balise HTML -->
+</html>
