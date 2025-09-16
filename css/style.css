@@ -53,25 +53,25 @@
 
 /* Création et animation des pop-up d'image */
 .popup {
-    display: none;
+    display: none; /*Génération d'un fond sombre quant l'image s'affiche en grand*/
     position: fixed;
-    z-index: 1000;
-    left: 0;
+    z-index: 1000; /*Doit s'afficher par dessus tout les autres élements*/
+    left: 0; /*Commence en haut à gauche*/
     top: 0;
-    width: 100%;
+    width: 100%; /*Doit prendre tout l'écran*/
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /*Fond gris transparent*/
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     flex-direction: column; /* Alignement vertical */
 }
 
 
 /* Image agrandie */
 .popup-content {
-    max-width: 90%;
-    max-height: 90%;
-    border: 5px solid white;
-    border-radius: 10px;
+    max-width: 90%; /*Taille image zoomer*/
+    max-height: 90%; /*Taille image zoomer*/
+    border: 5px solid white; /*Couleur bordure*/
+    border-radius: 10px; /*Epaisseur bordure*/
     margin-top: 20px; /* Un peu d'espace pour éviter que l'image touche le titre */
 }

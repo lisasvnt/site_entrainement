@@ -2,8 +2,8 @@
 
 // Ouvrir la pop-up
 function openPopup(imageElement) { //Création d'une fonction openPopup 
-    const popup = document.getElementById("imagePopup");
-    const popupImage = document.getElementById("popupImage");
+    const popup = document.getElementById("imagePopup"); //La fonction s'applique aux élements ayant une classe imagePopup
+    const popupImage = document.getElementById("popupImage"); //La fonction s'applique aux élements ayant une classe popupImage
     // Mettre à jour l'image et le titre
     popupImage.src = imageElement.src; // On demande d'afficher l'image sur laquelle on a cliqué
     popup.style.display = "flex"; //Afficher la pop-up
